@@ -1,0 +1,116 @@
+section.services-sec {}
+
+.service {
+  outline: 2px solid transparent;
+  height: 100%;
+  border-radius: 24px;
+  background: #FFF;
+  padding: 25px;
+
+  &:hover {
+    outline: 2px solid rgb(209, 209, 209);
+  }
+
+  .service_number {
+    color: #E0D5C2;
+    leading-trim: both;
+    text-edge: cap;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    font-size: 45px;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 50px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 50px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 70px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 90px;
+    }
+
+    @include media-breakpoint-up(xxl) {}
+
+  }
+
+  .service_title {
+    color: #151515;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    // margin-bottom: 15px;
+    font-size: 22px;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 24px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 26px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 28px;
+    }
+
+    @include media-breakpoint-up(xxl) {
+      font-size: 30px;
+    }
+  }
+
+  .service_desc {
+    color: #6A6A6A;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  /* First service */
+  &-1 {}
+
+  /* Second service */
+  &-2 {
+    background: #F7F6FF;
+
+    .service_number {
+      color: #4F2D85;
+    }
+
+    .service_title {
+      color: #4F2D85;
+    }
+  }
+
+  /* Third service */
+  &-3 {
+    background: #FFF3ED;
+
+    .service_number {
+      color: #AF572A;
+    }
+
+    .service_title {
+      color: #FF7E3C;
+    }
+  }
+
+  /* Fourth service */
+  &-4 {
+    background: #FFF;
+  }
+
+}

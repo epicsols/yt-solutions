@@ -1,0 +1,81 @@
+header {
+  background-color: #000730;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.navbar {
+  border-radius: 70px;
+  padding: 5px 20px;
+  border: 0.5px solid rgba(244, 244, 244, 0.78);
+
+  .navbar-brand {
+    img.logo {
+      height: 45px;
+    }
+  }
+
+  .navbar-nav {
+
+    .nav-item {
+
+      .nav-link {
+        color: #fff;
+
+        &:hover {
+          color: lighten($info, 12%);
+        }
+      }
+    }
+  }
+
+  .offcanvas {
+    background-color: $secondary;
+
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+  }
+}
+
+
+
+.hero {
+  .hero-title {
+    color: #F2F2F2;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 25px;
+    line-height: 40px;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 28px;
+      line-height: 50px;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 35px;
+      line-height: 60px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 40px;
+      line-height: 65px;
+    }
+
+    @include media-breakpoint-up(xl) {
+      font-size: 50px;
+      line-height: 70px;
+    }
+
+    @include media-breakpoint-up(xxl) {}
+  }
+}

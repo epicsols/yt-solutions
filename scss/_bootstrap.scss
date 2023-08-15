@@ -1,0 +1,89 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, change you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+// Option 1
+//
+// Import all of Bootstrap's CSS
+
+// @import "./boostrap/bootstrap";
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Toggle global options
+$enable-gradients: false;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$primary: #FF7E3B;
+$info: #4F46E5;
+$warning: #FFE99B;
+$secondary: #080857;
+$secondary-dark: darken($secondary, 10%);
+$secondary-light: lighten($secondary, 10%);
+
+// Required
+@import "./boostrap/functions";
+@import "./boostrap/functions";
+@import "./boostrap/variables";
+@import "./boostrap/variables-dark";
+@import "./boostrap/maps";
+@import "./boostrap/mixins";
+@import "./boostrap/utilities";
+@import "./boostrap/root";
+@import "./boostrap/reboot";
+
+@import "./boostrap/type";
+// @import "./boostrap/images";
+@import "./boostrap/containers";
+@import "./boostrap/grid";
+// @import "./boostrap/tables";
+@import "./boostrap/forms";
+@import "./boostrap/buttons";
+@import "./boostrap/transitions";
+@import "./boostrap/dropdown";
+// @import "./boostrap/button-group";
+@import "./boostrap/nav";
+@import "./boostrap/navbar"; // Requires nav
+// @import "./boostrap/card";
+// @import "./boostrap/breadcrumb";
+// @import "./boostrap/accordion";
+// @import "./boostrap/pagination";
+// @import "./boostrap/badge";
+// @import "./boostrap/alert";
+// @import "./boostrap/progress";
+// @import "./boostrap/list-group";
+@import "./boostrap/close";
+// @import "./boostrap/toasts";
+// @import "./boostrap/modal"; // Requires transitions
+// @import "./boostrap/tooltip";
+// @import "./boostrap/popover";
+// @import "./boostrap/carousel";
+// @import "./boostrap/spinners";
+@import "./boostrap/offcanvas"; // Requires transitions
+// @import "./boostrap/placeholders";
+
+// Helpers
+// @import "helpers";
+
+// Utilities
+@import "./boostrap/utilities/api";

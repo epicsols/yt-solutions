@@ -1,0 +1,55 @@
+section.a-content {}
+
+.icon {
+  padding: 2rem;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(5, 130, 247, 0.10) 0%, rgba(5, 130, 247, 0.00) 100%);
+
+  .icon_wrapper {
+    aspect-ratio: 1/1;
+    padding: 15px;
+    background-color: #0582F7;
+    display: inline-block;
+    border-radius: 100%;
+    margin-bottom: 10px;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .icon_title {
+    font-weight: 700;
+    letter-spacing: 0px;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 10px;
+  }
+
+  .icon_desc {
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+
+  &_1 {}
+
+  &_2 {
+    background: linear-gradient(180deg, rgba(136, 110, 226, 0.10) 0%, rgba(136, 110, 226, 0.00) 100%);
+
+    .icon_wrapper {
+      background-color: #8337FF;
+    }
+  }
+
+  &_3 {
+    background: linear-gradient(180deg, rgba(255, 16, 102, 0.10) 0%, rgba(255, 16, 102, 0.00) 100%);
+
+    .icon_wrapper {
+      background-color: #FF1066;
+    }
+  }
+}
