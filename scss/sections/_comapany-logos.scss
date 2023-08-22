@@ -1,0 +1,51 @@
+section.comapany-logos {
+	.logo-wrapper {
+		margin: 1.5rem 1rem;
+
+		@include media-breakpoint-up(sm) {
+			margin: 2rem 1rem;
+		}
+
+		@include media-breakpoint-up(md) {
+			margin: 2rem 1rem;
+		}
+
+		@include media-breakpoint-up(lg) {
+		}
+
+		@include media-breakpoint-up(xl) {
+			margin: 2rem 1.5rem;
+		}
+
+		@include media-breakpoint-up(xxl) {
+		}
+
+		background: #fff;
+		border-radius: 16px;
+		box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+		height: 100%;
+		display: grid;
+		place-items: center;
+		place-content: center;
+		min-height: 150px;
+
+		.logo-img {
+			min-width: 140px;
+			max-width: 95%;
+			filter: grayscale(0);
+
+			&:hover {
+				filter: grayscale(1);
+			}
+		}
+	}
+
+	.glide__slides {
+	}
+
+	.glide {
+	}
+
+	.glide__slide {
+	}
+}
