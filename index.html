@@ -225,7 +225,7 @@
         </h2>
       </div>
 
-      <div class="glide">
+      <div class="glide glide_logos">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide" data-index="0">
@@ -444,7 +444,7 @@
   <section class="testimonials mb-5">
     <div class="container">
 
-      <div class="glide">
+      <div class="glide glide_testimonials">
         <div class="glide__track" data-glide-el="track">
           <ul class="glide__slides">
             <li class="glide__slide" data-index="0">
@@ -676,7 +676,7 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
-      var o = {
+      var config = {
         type: 'carousel',
         startAt: 0,
         perView: 5,
@@ -701,7 +701,21 @@
           }
         }
       }
-      var inst = new Glide('.glide', o).mount()
+      var inst = new Glide('.glide_logos', config).mount()
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+      var config2 = {
+        type: 'carousel',
+        startAt: 0,
+        perView: 1,
+        animationDuration: 150,
+        dragThreshold: 1,
+        focusAt: 'center',
+        peek: { before: 0, after: 0 },
+        gap: 0,
+        autoplay: 5000,
+      }
+      var inst = new Glide('.glide_testimonials', config2).mount()
     }); 
   </script>
 
